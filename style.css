@@ -1,0 +1,19 @@
+h1 { text-align: center; font-family: Arial, Helvetica, sans-serif; }
+
+.container { display: flex; flex-direction: column; align-items: center; }
+
+.detallesMascota { display: flex;
+  flex-direction: column;
+  margin: 20px; }
+
+#imagenMostrada { margin-right: 20px; }
+
+img {
+  width: 50%;
+}
+#infoMascota { display: flex; flex-direction: column; } 
+#map { width: 600px; height: 400px; border: 1px solid black; } 
+
+p {
+  margin-left: 100px;
+}

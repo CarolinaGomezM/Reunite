@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .menu-container {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 1;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+
+        .menu-toggle {
+            width: 50px;
+            height: 50px;
+            background-color: #007bff;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .menu-toggle:hover {
+            background-color: #0056b3;
+        }
+
+        .menu-options {
+            display: none;
+            position: absolute;
+            top: 70px;
+            left: -10px;
+            background-color: #007bff;
+            border-radius: 10px;
+            padding: 10px;
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+            animation: slideIn 0.5s ease-in-out;
+            }
+
+        .menu-options.show {
+            display: block;
+        }
+
+        .menu-item {
+            margin: 5px 0;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .menu-item:hover {
+            background-color: #0056b3;
+        }
+
+        @keyframes slideIn {
+            0% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
+    <title>Perfil de Usuario</title>
+</head>
+
+<body>
+    <div class="menu-container">
+        <div class="menu-toggle" onclick="toggleMenu()"></div>
+        <div class="menu-options">
+            <div class="menu-item">Configuración</div>
+            <div class="menu-item">Salir</div>
+        </div>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            var menuOptions = document.querySelector('.menu-options');
+            menuOptions.classList.toggle('show');
+        }
+    </script>
+</body>
+
+</html>

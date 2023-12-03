@@ -1,0 +1,53 @@
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="/agregar.css">
+</head>
+<body>
+  <div class="menu">
+    <ul>
+      <li><a href="mispubli.html">Go back</a></li>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="index.html">Lost Pets</a></li>
+      <li><a href="indexadopt.html">Pets for adoption</a></li>
+      <li><a href="informate.html">Inform yourself</a></li>
+    </ul>
+  </div>
+  <h1>Add Pet</h1>
+  <form action="#">
+  <label for="nombre">Name:</label>
+  <input type="text" id="nombre" placeholder="Name">
+  <label for="especie">Species:</label>
+  <input type="text" id="especie" placeholder="Species">
+  <label for="raza">Breed:</label>
+  <input type="text" id="raza" placeholder="Breed">
+  <label for="color">Color:</label>
+  <input type="text" id="color" placeholder="Color">
+  <label for="edad">Age:</label>
+  <input type="number" id="edad" placeholder="Age">
+  <label for="sexo">Sex:</label>
+  <select id="sexo">
+  <option value="Macho">Male</option>
+  <option value="Hembra">Female</option>
+  </select>
+  <label for="ubicacion">Location:</label>
+  <input type="text" id="ubicacion" placeholder="Location">
+  <label for="contactoNombre">Contact Name:</label>
+  <input type="text" id="contactoNombre" placeholder="Contact Name">
+  <label for="telefono">Contact Phone:</label>
+  <input type="text" id="telefono" placeholder="Contact Phone">
+  <label for="email">Contact Email:</label>
+  <input type="text" id="email" placeholder="Contact Email">  
+    
+    <!-- Agrega el input de tipo "file" para seleccionar la imagen -->
+    <label for="imagen">Image:</label>
+    <input type="file" id="imagen" accept="image/*" onchange="mostrarImagen()">
+    <img id="imagenMostrada" src="" alt="Vista previa de la imagen">
+    
+    <label for="descripcion">Description:</label>
+    <textarea id="descripcion" placeholder="Descripción"></textarea>
+
+    <button onclick="agregarMascota()">Add</button>
+  </form>
+  <script src="agregar.js"></script>
+</body>
+</html>

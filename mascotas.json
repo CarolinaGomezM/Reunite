@@ -1,0 +1,36 @@
+[
+    {
+      "id": 1,
+      "nombre": "Max",
+      "especie": "Perro",
+      "raza": "Labrador Retriever",
+      "color": "Dorado",
+      "edad": 3,
+      "sexo": "Macho",
+      "ubicacion": "Calle Principal, Ciudad",
+      "contacto": {
+        "nombre": "Juan Pérez",
+        "telefono": "555-123-4567",
+        "email": "juan@example.com"
+      },
+      "imagen": "max.jpg",
+      "descripcion": "Max es un perro amigable y juguetón. Se perdió el 10 de agosto en la zona del parque."
+    },
+    {
+      "id": 2,
+      "nombre": "Luna",
+      "especie": "Gato",
+      "raza": "Siamés",
+      "color": "Blanco y negro",
+      "edad": 2,
+      "sexo": "Hembra",
+      "ubicacion": "Avenida Principal, Ciudad",
+      "contacto": {
+        "nombre": "María Rodríguez",
+        "telefono": "555-987-6543",
+        "email": "maria@example.com"
+      },
+      "imagen": "luna.jpg",
+      "descripcion": "Luna es una gata cariñosa pero tímida. Se perdió el 5 de septiembre en el vecindario."
+    }
+  ]

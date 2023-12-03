@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+  <meta charset="UTF-8">
+  <title>Detalles de la Mascota</title>
+  <!-- Agrega tus estilos CSS si es necesario -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet-control-geocoder@1.13.1/dist/Control.Geocoder.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder@1.13.1/dist/Control.Geocoder.css" />
+
+    <style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.menu {
+    background-color: #2c3e50; /* Azul oscuro */
+    color: #fff;
+    padding: 40px; /* Aumenta el espacio interno del menú */
+    text-align: center;
+    border-radius: 5px;
+    margin: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sutil sombra para un toque profesional */
+    transition: background-color 0.3s ease;
+  }
+  
+  .menu:hover {
+    background-color: #34495e; /* Cambia el color al pasar el ratón sobre el menú */
+  }
+  
+  .menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    transition: transform 0.3s ease; /* Agrega una animación al menú al pasar el ratón sobre él */
+  }
+  
+  .menu ul:hover {
+    transform: scale(1.05); /* Hace que el menú se agrande ligeramente al pasar el ratón sobre él */
+  }
+  
+  .menu ul li {
+    margin: 0 40px; /* Aumenta el espacio entre elementos del menú */
+    transition: transform 0.3s ease; /* Agrega una animación a los elementos del menú */
+  }
+  
+  .menu ul li:hover {
+    transform: scale(1.1); /* Hace que los elementos del menú se agranden ligeramente al pasar el ratón sobre ellos */
+  }
+  
+  .menu a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 18px; /* Aumenta el tamaño de la letra del menú */
+    transition: color 0.3s ease;
+  }
+  
+  .menu a:hover {
+    color: #333; /* Cambia el color al pasar el ratón sobre el enlace */
+  }
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.detallesMascota {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#detallesMascota{
+  width: 50%;
+  display: flex;
+  place-items: center;
+  flex-direction: row;
+}
+
+#div2{
+  display: flex;
+  flex-direction: column;
+}
+
+#div1{
+  display: flex;
+  justify-content: center;
+}
+
+p{
+  margin: 20px 0;
+}
+
+.detallesMascota img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #333;
+}
+
+#imagenMostrada{
+  margin: 0;
+}
+
+.detallesMascota div {
+    width: 60%;
+}
+
+.detallesMascota p {
+    text-align: center;
+    margin-bottom: 10px;
+    line-height: 1.6;
+    color: #333;
+}
+
+#map {
+    width: 100%;
+    height: 400px;
+    margin-top: 20px;
+}
+
+    </style>
+</head>
+<body>
+  <div class="menu">
+    <ul>
+      <li><a href="index.html">Go back</a></li>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="index.html">Lost Pets</a></li>
+      <li><a href="indexadopt.html">Pets for adoption</a></li>
+      <li><a href="informate.html">Inform yourself</a></li>
+    </ul>
+  </div>
+  <h1>Pet details</h1>
+  <div class="container">
+    <div class="imgmascota">
+      <img id="imagenMostrada" src="" alt="Imagen de la mascota"><br>
+    </div>
+    <div id="detallesMascota" class="detallesMascota">
+      <div id="div1"></div>
+      <div id="div2"></div>
+    </div>
+    <div id="map"></div>
+  </div>
+  
+  <script src="script.js"></script>
+  <script src="detalles.js"></script>
+</body>
+</html>
+
